@@ -639,18 +639,28 @@ public class SocialApp extends javax.swing.JFrame {
         return null;
     }
 
-// Método para mostrar el perfil del usuario (incluyendo posts)
-    private void mostrarPerfil(SocialClass usuario) {
-        StringBuilder perfil = new StringBuilder();
-        perfil.append("Perfil de ").append(usuario.getUsername()).append(":\n");
+// Método para mostrar el perfil del usuario (incluyendo amigos, posts y comentarios)
+private void mostrarPerfil(SocialClass usuario) {
+    StringBuilder perfil = new StringBuilder();
+    perfil.append("Perfil de ").append(usuario.getUsername()).append(":\n\n");
 
-        // Agregar posts del usuario al StringBuilder
-        for (String post : usuario.getPosts()) {
-            perfil.append("- ").append(post).append("\n");
-        }
+    // Agregar amigos al StringBuilder
+    perfil.append("Amigos:\n");
+    for (String friend : usuario.getFriends()) {
+        perfil.append("- ").append(friend).append("\n");
+    }
+    perfil.append("\n");
 
-        // Mostrar en JOptionPane
-        JOptionPane.showMessageDialog(this, perfil.toString(), "Perfil de Usuario", JOptionPane.INFORMATION_MESSAGE);
+    // Agregar posts del usuario al StringBuilder
+    perfil.append("Posts:\n");
+    for (String post : usuario.getPosts()) {
+        perfil.append("- ").append(post).append("\n");
+    }
+    perfil.append("\n");
+
+
+    // Mostrar en JOptionPane
+    JOptionPane.showMessageDialog(this, perfil.toString(), "Perfil de Usuario", JOptionPane.INFORMATION_MESSAGE);
 
 
     }                                      
