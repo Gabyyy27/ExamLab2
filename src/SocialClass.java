@@ -29,6 +29,10 @@ public class SocialClass {
     public ArrayList<String> getFriends() {
         return friends;
     }
+
+    public ArrayList<String> getPosts() {
+        return posts;
+    }
     
     
 

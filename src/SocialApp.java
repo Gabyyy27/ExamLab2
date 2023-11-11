@@ -13,7 +13,9 @@ import javax.swing.JOptionPane;
  * @author Lourdes
  */
 public class SocialApp extends javax.swing.JFrame {
-    private UberSocial uberSocialInstance = new UberSocial();  
+
+    private UberSocial uberSocialInstance = new UberSocial();
+
     /**
      * Creates new form SocialApp
      */
@@ -42,14 +44,35 @@ public class SocialApp extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         postField = new javax.swing.JTextField();
         CREARPOST = new javax.swing.JButton();
+        AGREGARAMIGO = new javax.swing.JDialog();
+        jPanel4 = new javax.swing.JPanel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        friend1Field = new javax.swing.JTextField();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        friend2Field = new javax.swing.JTextField();
+        AGREGARAMIIIGOOO = new javax.swing.JButton();
+        AGREGARCOMET = new javax.swing.JDialog();
+        jPanel5 = new javax.swing.JPanel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        commentUserField = new javax.swing.JTextField();
+        commentPostIdField = new javax.swing.JTextField();
+        commentAuthorField = new javax.swing.JTextField();
+        commentField = new javax.swing.JTextField();
+        COMMET = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         CREAR = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jTextField1 = new javax.swing.JTextField();
-        jButton5 = new javax.swing.JButton();
+        AGREGARPOSTS = new javax.swing.JButton();
+        AGREGARAMIX = new javax.swing.JButton();
+        AGREGARMCOMET = new javax.swing.JButton();
+        usernameBusquedaField = new javax.swing.JTextField();
+        BUSCAR = new javax.swing.JButton();
 
         CREARPANEL.addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowActivated(java.awt.event.WindowEvent evt) {
@@ -167,12 +190,220 @@ public class SocialApp extends javax.swing.JFrame {
             .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
+        jPanel4.setBackground(new java.awt.Color(255, 255, 255));
+
+        jLabel5.setFont(new java.awt.Font("Serif", 1, 14)); // NOI18N
+        jLabel5.setText("AGREGAR AMIGO");
+
+        jLabel6.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel6.setText("USUARIO 1:");
+
+        friend1Field.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                friend1FieldActionPerformed(evt);
+            }
+        });
+
+        jLabel7.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
+        jLabel7.setText("NOMBRE:");
+
+        jLabel8.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel8.setText("USUARIO 2:");
+
+        jLabel9.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
+        jLabel9.setText("NOMBRE:");
+
+        friend2Field.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                friend2FieldActionPerformed(evt);
+            }
+        });
+
+        AGREGARAMIIIGOOO.setBackground(new java.awt.Color(204, 0, 0));
+        AGREGARAMIIIGOOO.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        AGREGARAMIIIGOOO.setForeground(new java.awt.Color(255, 255, 255));
+        AGREGARAMIIIGOOO.setText("AGREGAR");
+        AGREGARAMIIIGOOO.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AGREGARAMIIIGOOOActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addGap(48, 48, 48)
+                        .addComponent(jLabel7)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(friend1Field, javax.swing.GroupLayout.PREFERRED_SIZE, 231, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addGap(90, 90, 90)
+                        .addComponent(jLabel6))
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addGap(90, 90, 90)
+                        .addComponent(jLabel8))
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addGap(48, 48, 48)
+                        .addComponent(jLabel9)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(friend2Field, javax.swing.GroupLayout.PREFERRED_SIZE, 231, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+                        .addComponent(jLabel5)
+                        .addGap(138, 138, 138))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+                        .addComponent(AGREGARAMIIIGOOO)
+                        .addGap(48, 48, 48))))
+        );
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addGap(22, 22, 22)
+                .addComponent(jLabel5)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel6)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(friend1Field, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel7))
+                .addGap(34, 34, 34)
+                .addComponent(jLabel8)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(friend2Field, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel9))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(AGREGARAMIIIGOOO, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(49, 49, 49))
+        );
+
+        javax.swing.GroupLayout AGREGARAMIGOLayout = new javax.swing.GroupLayout(AGREGARAMIGO.getContentPane());
+        AGREGARAMIGO.getContentPane().setLayout(AGREGARAMIGOLayout);
+        AGREGARAMIGOLayout.setHorizontalGroup(
+            AGREGARAMIGOLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        AGREGARAMIGOLayout.setVerticalGroup(
+            AGREGARAMIGOLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+
+        jPanel5.setBackground(new java.awt.Color(51, 153, 255));
+
+        jLabel10.setText("USUARIO:");
+
+        jLabel11.setText("POST ID:");
+
+        jLabel12.setText("AUTOR:");
+
+        jLabel13.setText("COMENTARIO:");
+
+        commentUserField.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+
+        commentPostIdField.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        commentPostIdField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                commentPostIdFieldActionPerformed(evt);
+            }
+        });
+
+        commentAuthorField.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+
+        commentField.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        commentField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                commentFieldActionPerformed(evt);
+            }
+        });
+
+        COMMET.setBackground(new java.awt.Color(0, 102, 102));
+        COMMET.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        COMMET.setForeground(new java.awt.Color(255, 255, 255));
+        COMMET.setText("CREAR");
+        COMMET.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                COMMETActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
+        jPanel5.setLayout(jPanel5Layout);
+        jPanel5Layout.setHorizontalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addGap(55, 55, 55)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addComponent(jLabel10)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(commentUserField))
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addComponent(jLabel13)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(commentField, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel11)
+                            .addComponent(jLabel12))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(commentAuthorField, javax.swing.GroupLayout.PREFERRED_SIZE, 182, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(commentPostIdField, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(142, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(COMMET)
+                .addGap(79, 79, 79))
+        );
+        jPanel5Layout.setVerticalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addGap(63, 63, 63)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel10)
+                    .addComponent(commentUserField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel11)
+                    .addComponent(commentPostIdField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel12)
+                    .addComponent(commentAuthorField, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel13)
+                    .addComponent(commentField, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(48, 48, 48)
+                .addComponent(COMMET)
+                .addContainerGap(50, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout AGREGARCOMETLayout = new javax.swing.GroupLayout(AGREGARCOMET.getContentPane());
+        AGREGARCOMET.getContentPane().setLayout(AGREGARCOMETLayout);
+        AGREGARCOMETLayout.setHorizontalGroup(
+            AGREGARCOMETLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        AGREGARCOMETLayout.setVerticalGroup(
+            AGREGARCOMETLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         CREAR.setBackground(new java.awt.Color(0, 0, 102));
-        CREAR.setFont(new java.awt.Font("NSimSun", 1, 14)); // NOI18N
+        CREAR.setFont(new java.awt.Font("NSimSun", 1, 16)); // NOI18N
         CREAR.setForeground(new java.awt.Color(255, 255, 255));
         CREAR.setText("CREAR USUARIO");
+        CREAR.setActionCommand("");
         CREAR.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         CREAR.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -180,30 +411,54 @@ public class SocialApp extends javax.swing.JFrame {
             }
         });
 
-        jButton2.setBackground(new java.awt.Color(0, 0, 102));
-        jButton2.setFont(new java.awt.Font("NSimSun", 1, 14)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(255, 255, 255));
-        jButton2.setText("AGREGAR POST");
-        jButton2.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        AGREGARPOSTS.setBackground(new java.awt.Color(0, 0, 102));
+        AGREGARPOSTS.setFont(new java.awt.Font("NSimSun", 1, 16)); // NOI18N
+        AGREGARPOSTS.setForeground(new java.awt.Color(255, 255, 255));
+        AGREGARPOSTS.setText("AGREGAR POST");
+        AGREGARPOSTS.setActionCommand("");
+        AGREGARPOSTS.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        AGREGARPOSTS.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                AGREGARPOSTSActionPerformed(evt);
             }
         });
 
-        jButton3.setBackground(new java.awt.Color(0, 0, 102));
-        jButton3.setFont(new java.awt.Font("NSimSun", 1, 14)); // NOI18N
-        jButton3.setForeground(new java.awt.Color(255, 255, 255));
-        jButton3.setText("AGREGAR AMIGO");
-        jButton3.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        AGREGARAMIX.setBackground(new java.awt.Color(0, 0, 102));
+        AGREGARAMIX.setFont(new java.awt.Font("NSimSun", 1, 16)); // NOI18N
+        AGREGARAMIX.setForeground(new java.awt.Color(255, 255, 255));
+        AGREGARAMIX.setText("AGREGAR AMIGO");
+        AGREGARAMIX.setActionCommand("");
+        AGREGARAMIX.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        AGREGARAMIX.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AGREGARAMIXActionPerformed(evt);
+            }
+        });
 
-        jButton4.setBackground(new java.awt.Color(0, 0, 102));
-        jButton4.setFont(new java.awt.Font("NSimSun", 1, 14)); // NOI18N
-        jButton4.setForeground(new java.awt.Color(255, 255, 255));
-        jButton4.setText("AGREGAR COMENTARIO");
-        jButton4.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        AGREGARMCOMET.setBackground(new java.awt.Color(0, 0, 102));
+        AGREGARMCOMET.setFont(new java.awt.Font("NSimSun", 1, 16)); // NOI18N
+        AGREGARMCOMET.setForeground(new java.awt.Color(255, 255, 255));
+        AGREGARMCOMET.setText("AGREGAR COMENTARIO");
+        AGREGARMCOMET.setActionCommand("");
+        AGREGARMCOMET.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        AGREGARMCOMET.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AGREGARMCOMETActionPerformed(evt);
+            }
+        });
 
-        jButton5.setText("Buscar");
+        usernameBusquedaField.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        usernameBusquedaField.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        BUSCAR.setBackground(new java.awt.Color(0, 0, 0));
+        BUSCAR.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        BUSCAR.setForeground(new java.awt.Color(255, 255, 255));
+        BUSCAR.setText("Buscar");
+        BUSCAR.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BUSCARActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -217,34 +472,35 @@ public class SocialApp extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(168, 168, 168)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                            .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(AGREGARPOSTS, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(CREAR, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton5)))
-                .addContainerGap(195, Short.MAX_VALUE))
+                            .addComponent(AGREGARAMIX, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(AGREGARMCOMET, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap(135, Short.MAX_VALUE)
+                .addComponent(usernameBusquedaField, javax.swing.GroupLayout.PREFERRED_SIZE, 234, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(BUSCAR, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(75, 75, 75))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(0, 26, Short.MAX_VALUE)
+                .addGap(0, 25, Short.MAX_VALUE)
                 .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton5))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 84, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(usernameBusquedaField, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(BUSCAR, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 66, Short.MAX_VALUE)
                 .addComponent(CREAR, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(30, 30, 30)
-                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(AGREGARPOSTS, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(32, 32, 32)
-                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(AGREGARAMIX, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(30, 30, 30)
-                .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(AGREGARMCOMET, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(36, 36, 36))
         );
 
@@ -306,35 +562,196 @@ public class SocialApp extends javax.swing.JFrame {
 
     }                                         
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+    private void AGREGARPOSTSActionPerformed(java.awt.event.ActionEvent evt) {                                             
         // TODO add your handling code here:
         AGREGARPOST.setVisible(true);
-    }                                        
+    }                                            
 
     private void CREARPANELWindowActivated(java.awt.event.WindowEvent evt) {                                           
         // TODO add your handling code here:
     }                                          
 
     private void CREARPOSTActionPerformed(java.awt.event.ActionEvent evt) {                                          
-    // Obtener el nombre de usuario y el post desde los campos de texto
-    String username = usernameField1.getText();
-    String post = postField.getText();
+        // Obtener el nombre de usuario y el post desde los campos de texto
+        String username = usernameField1.getText();
+        String post = postField.getText();
 
-    // Verificar que los campos no estén vacíos
-    if (username != null && !username.isEmpty() && post != null && !post.isEmpty()) {
-        // Verificar si el usuario existe y agregar el post si es así
-        if (existeUsuario(username)) {
-             uberSocialInstance.agregarPost(username, post);
-            JOptionPane.showMessageDialog(this, "Post creado por " + username + ": " + post, "Éxito", JOptionPane.INFORMATION_MESSAGE);
+        // Verificar que los campos no estén vacíos
+        if (username != null && !username.isEmpty() && post != null && !post.isEmpty()) {
+            // Verificar si el usuario existe y agregar el post si es así
+            if (existeUsuario(username)) {
+                uberSocialInstance.agregarPost(username, post);
+                JOptionPane.showMessageDialog(this, "Post creado por " + username + ": " + post, "Éxito", JOptionPane.INFORMATION_MESSAGE);
+            } else {
+                JOptionPane.showMessageDialog(this, "El usuario '" + username + "' no existe. Por favor, verifica el nombre de usuario.", "Error", JOptionPane.ERROR_MESSAGE);
+            }
         } else {
-            JOptionPane.showMessageDialog(this, "El usuario '" + username + "' no existe. Por favor, verifica el nombre de usuario.", "Error", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(this, "Por favor, ingresa un nombre de usuario y un post.", "Error", JOptionPane.ERROR_MESSAGE);
         }
-    } else {
-        JOptionPane.showMessageDialog(this, "Por favor, ingresa un nombre de usuario y un post.", "Error", JOptionPane.ERROR_MESSAGE);
-    }
 
 
     }                                         
+
+    private void BUSCARActionPerformed(java.awt.event.ActionEvent evt) {                                       
+        // Obtener el nombre de usuario desde el campo de texto
+        String username = usernameBusquedaField.getText();
+
+        // Verificar que el campo no esté vacío
+        if (username != null && !username.isEmpty()) {
+            // Buscar el usuario
+            SocialClass usuario = buscarUsuario(username);
+
+            // Verificar si el usuario existe
+            if (usuario != null) {
+                mostrarPerfil(usuario);
+            } else {
+                JOptionPane.showMessageDialog(this, "El usuario '" + username + "' no existe. Por favor, verifica el nombre de usuario.", "Error", JOptionPane.ERROR_MESSAGE);
+            }
+        } else {
+            JOptionPane.showMessageDialog(this, "Por favor, ingresa un nombre de usuario.", "Error", JOptionPane.ERROR_MESSAGE);
+        }
+    }
+
+// Método para buscar un usuario por su nombre
+    private SocialClass buscarUsuario(String username) {
+        for (SocialClass socialAccount : uberSocialInstance.getSocialAccounts()) {
+            SocialClass foundAccount = buscarEnUsuario(socialAccount, username);
+            if (foundAccount != null) {
+                return foundAccount;
+            }
+        }
+        return null;
+    }
+
+// Método para buscar un usuario en la estructura recursiva
+    private SocialClass buscarEnUsuario(SocialClass usuario, String username) {
+        if (usuario.getUsername().equalsIgnoreCase(username)) {
+            return usuario;
+        }
+
+        for (String friend : usuario.getFriends()) {
+            SocialClass foundAccount = buscarEnUsuario(buscarUsuario(friend), username);
+            if (foundAccount != null) {
+                return foundAccount;
+            }
+        }
+
+        return null;
+    }
+
+// Método para mostrar el perfil del usuario (incluyendo posts)
+    private void mostrarPerfil(SocialClass usuario) {
+        StringBuilder perfil = new StringBuilder();
+        perfil.append("Perfil de ").append(usuario.getUsername()).append(":\n");
+
+        // Agregar posts del usuario al StringBuilder
+        for (String post : usuario.getPosts()) {
+            perfil.append("- ").append(post).append("\n");
+        }
+
+        // Mostrar en JOptionPane
+        JOptionPane.showMessageDialog(this, perfil.toString(), "Perfil de Usuario", JOptionPane.INFORMATION_MESSAGE);
+
+
+    }                                      
+
+    private void friend1FieldActionPerformed(java.awt.event.ActionEvent evt) {                                             
+        // TODO add your handling code here:
+    }                                            
+
+    private void friend2FieldActionPerformed(java.awt.event.ActionEvent evt) {                                             
+        // TODO add your handling code here:
+    }                                            
+
+    private void AGREGARAMIXActionPerformed(java.awt.event.ActionEvent evt) {                                            
+        // TODO add your handling code here:
+
+        AGREGARAMIGO.setVisible(true);
+
+    }                                           
+
+    private void AGREGARAMIIIGOOOActionPerformed(java.awt.event.ActionEvent evt) {                                                 
+        // Obtener los nombres de usuario desde los campos de texto
+        String user1 = friend1Field.getText();
+        String user2 = friend2Field.getText();
+
+        // Verificar que ambos campos no estén vacíos
+        if (user1 != null && !user1.isEmpty() && user2 != null && !user2.isEmpty()) {
+            // Verificar si ambos usuarios existen y tienen la misma cuenta de red social
+            if (existeUsuario(user1) && existeUsuario(user2) && mismaCuentaRedSocial(user1, user2)) {
+                // Agregar amigos
+                uberSocialInstance.agregarAmigo(user1, user2);
+
+                // Mostrar mensaje de éxito
+                JOptionPane.showMessageDialog(this, " " + user1 + " y " + user2 + " ahora son amigos.", "Éxito", JOptionPane.INFORMATION_MESSAGE);
+            } else {
+                JOptionPane.showMessageDialog(this, "No se pueden agregar como amigos. Asegúrate de que ambos usuarios existan y tengan la misma cuenta de red social.", "Error", JOptionPane.ERROR_MESSAGE);
+            }
+        } else {
+            JOptionPane.showMessageDialog(this, "Por favor, ingresa dos nombres de usuario para agregar como amigos.", "Error", JOptionPane.ERROR_MESSAGE);
+        }
+    }
+
+// Método para verificar si ambos usuarios tienen la misma cuenta de red social
+    private boolean mismaCuentaRedSocial(String user1, String user2) {
+        SocialClass cuentaUser1 = buscarUsuario(user1);
+        SocialClass cuentaUser2 = buscarUsuario(user2);
+
+        // Verificar que ambos objetos de cuenta existan y tengan el mismo tipo (Facebook o Twitter)
+        return cuentaUser1 != null && cuentaUser2 != null && cuentaUser1.getClass().equals(cuentaUser2.getClass());
+
+    }                                                
+
+    private void commentFieldActionPerformed(java.awt.event.ActionEvent evt) {                                             
+    
+    }                                            
+
+    private void AGREGARMCOMETActionPerformed(java.awt.event.ActionEvent evt) {                                              
+        // TODO add your handling code here:
+        AGREGARCOMET.setVisible(true);
+    }                                             
+
+    private void commentPostIdFieldActionPerformed(java.awt.event.ActionEvent evt) {                                                   
+        // TODO add your handling code here:
+    }                                                  
+
+    private void COMMETActionPerformed(java.awt.event.ActionEvent evt) {                                       
+        // TODO add your handling code here:
+            // TODO add your handling code here:
+        String user = commentUserField.getText();
+        String postIdStr = commentPostIdField.getText();
+        String author = commentAuthorField.getText();
+        String commentText = commentField.getText();
+
+        if (user != null && !user.isEmpty() && postIdStr != null && !postIdStr.isEmpty()
+                && author != null && !author.isEmpty() && commentText != null && !commentText.isEmpty()) {
+            try {
+                int postId = Integer.parseInt(postIdStr);
+
+                // Verificar si la red social con ese usuario existe y es de tipo Facebook
+                if (existeUsuario(user) && esRedSocialFacebook(user)) {
+                    uberSocialInstance.agregarComment(user, postId, author, commentText);
+                // Mostrar mensaje de éxito
+                JOptionPane.showMessageDialog(this, "Comentario realizado por " + author + " en el Post " + postId + " de " + user + ".", "Éxito", JOptionPane.INFORMATION_MESSAGE);
+                } else {
+                    JOptionPane.showMessageDialog(this, "La red social con el usuario '" + user + "' no existe o no es de tipo FACEBOOK.", "Error", JOptionPane.ERROR_MESSAGE);
+                }
+            } catch (NumberFormatException e) {
+                e.printStackTrace();
+                JOptionPane.showMessageDialog(this, "Por favor, ingresa un número válido para el ID del Post.", "Error", JOptionPane.ERROR_MESSAGE);
+            }
+
+        } else {
+            JOptionPane.showMessageDialog(this, "Por favor, completa todos los campos para agregar un comentario.", "Error", JOptionPane.ERROR_MESSAGE);
+        }
+
+    }                                      
+
+    private boolean esRedSocialFacebook(String username) {
+        SocialClass cuentaUsuario = buscarUsuario(username);
+        return cuentaUsuario != null && cuentaUsuario instanceof Facebook;
+
+    }
 
     /**
      * @param args the command line arguments
@@ -372,24 +789,45 @@ public class SocialApp extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify                     
+    private javax.swing.JDialog AGREGARAMIGO;
+    private javax.swing.JButton AGREGARAMIIIGOOO;
+    private javax.swing.JButton AGREGARAMIX;
+    private javax.swing.JDialog AGREGARCOMET;
+    private javax.swing.JButton AGREGARMCOMET;
     private javax.swing.JDialog AGREGARPOST;
+    private javax.swing.JButton AGREGARPOSTS;
+    private javax.swing.JButton BUSCAR;
+    private javax.swing.JButton COMMET;
     private javax.swing.JButton CREAR;
     private javax.swing.JDialog CREARPANEL;
     private javax.swing.JButton CREARPOST;
     private javax.swing.JButton CrearUser;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
+    private javax.swing.JTextField commentAuthorField;
+    private javax.swing.JTextField commentField;
+    private javax.swing.JTextField commentPostIdField;
+    private javax.swing.JTextField commentUserField;
+    private javax.swing.JTextField friend1Field;
+    private javax.swing.JTextField friend2Field;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
-    private javax.swing.JTextField jTextField1;
+    private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel5;
     private javax.swing.JTextField postField;
+    private javax.swing.JTextField usernameBusquedaField;
     private javax.swing.JTextField usernameField;
     private javax.swing.JTextField usernameField1;
     // End of variables declaration                   
